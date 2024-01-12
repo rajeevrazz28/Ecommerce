@@ -39,6 +39,21 @@ import NotFound from './components/NotFound';
 
 function App() {
 
+  
+const backendUrl = 'https://ecommerce-shopee.onrender.com';
+
+// Example GET request
+fetch(`${backendUrl}/api/v1`)
+  .then(response => response.json())
+  .then(data => {
+    // Handle the data from the backend
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle errors
+    console.error('Error:', error);
+  });
+
   const dispatch = useDispatch();
   const { pathname } = useLocation();
   // const [stripeApiKey, setStripeApiKey] = useState("");
