@@ -1,7 +1,7 @@
 {
-  "name": "shopee",
+  "name": "flipkart",
   "version": "1.0.0",
-  "description": "Full Stack Flipkart Ecommerce",
+  "description": "Full Stack Shopee Ecommerce",
   "main": "backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
@@ -23,17 +23,14 @@
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "express-fileupload": "^1.2.1",
-    "git": "^0.1.5",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "6.3",
     "mongoose": "^8.0.3",
     "nodemailer": "^6.7.2",
-    "nodemon": "^3.0.2",
     "paytmchecksum": "^1.5.1",
     "react-helmet-async": "^2.0.4",
     "stripe": "^8.200.0",
     "uuid": "^8.3.2",
     "validator": "^13.7.0"
-  },
-  "devDependencies": {}
+  }
 }
