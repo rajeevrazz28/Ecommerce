@@ -1,5 +1,4 @@
 const app = require('./app');
-// const connectDatabase = require('./config/database');
 const cloudinary = require('cloudinary');
 const PORT = process.env.PORT;
 const cors = require('cors');
@@ -8,7 +7,10 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // Enable CORS for all routes
-app.use(cors());
+app.use(cors({
+    origin: process.env.ORIGIN,
+    credentials: true,
+}));
 
 // UncaughtException Error
 process.on('uncaughtException', (err) => {
