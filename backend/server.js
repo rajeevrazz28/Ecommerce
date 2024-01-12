@@ -8,7 +8,7 @@ require('dotenv').config();
 
 // Enable CORS for all routes
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: process.env.ORIGIN,
     credentials: true,
 }));
 
