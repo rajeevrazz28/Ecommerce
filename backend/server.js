@@ -9,7 +9,7 @@ require('dotenv').config();
 // Enable CORS for all routes
 app.use(cors({
     origin: process.env.ORIGIN,
-    credentials: true,
+    
 }));
 
 // UncaughtException Error

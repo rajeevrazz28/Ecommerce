@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
 app.use(cors({
     origin: process.env.ORIGIN,
-    credentials: true,
+    
 }));
 
 const user = require('./routes/userRoute');
