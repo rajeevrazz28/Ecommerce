@@ -7,10 +7,10 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // Enable CORS for all routes
-// app.use(cors({
-//     origin: process.env.ORIGIN,
-//     credentials: true,
-// }));
+app.use(cors({
+    origin: 'http://localhost:3000',
+    credentials: true,
+}));
 
 // UncaughtException Error
 process.on('uncaughtException', (err) => {
