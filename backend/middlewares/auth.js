@@ -18,7 +18,7 @@ exports.isAuthenticatedUser = asyncErrorHandler(async (req, res, next) => {
     } catch (error) {
         return next(new ErrorHandler("Invalid or expired token", 401));
     }
-    next();
+    
 });
 
 exports.authorizeRoles = (...roles) => {

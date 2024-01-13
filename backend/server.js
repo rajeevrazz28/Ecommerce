@@ -8,10 +8,9 @@ require('dotenv').config();
 
 // Enable CORS for all routes
 // app.use(cors({
-//     origin: process.env.ORIGIN,
-//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-//     credentials: true, // Enable credentials (cookies, Authorization headers)
-//     optionsSuccessStatus: 204, 
+//     origin: "http://localhost:3000",
+//     credentials: true, 
+    
     
 // }));
 
