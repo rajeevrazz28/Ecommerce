@@ -27,6 +27,7 @@
     "mongodb": "6.3",
     "mongoose": "^8.0.3",
     "nodemailer": "^6.7.2",
+    "nodemon": "^3.0.2",
     "paytmchecksum": "^1.5.1",
     "react-helmet-async": "^2.0.4",
     "stripe": "^8.200.0",
